@@ -54,16 +54,12 @@ private:
 public:
 	static mutex mut;
 	static singleton& getinstance(){
-		mut.lock();
 		static singleton sig;
-		mut.unlock();
 		return sig;
 	}
 	//可以返回指针
 	//static singleton* getinstance(){
-	//	mut.lock();
 	//	static singleton sig;
-	//	mut.unlock();
 	//	return &sig;
 	//}
 };
