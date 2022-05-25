@@ -52,7 +52,6 @@ private:
 	singleton(const singleton& a);
 	singleton& operator=(const singleton& a);
 public:
-	static mutex mut;
 	static singleton& getinstance(){
 		static singleton sig;
 		return sig;
@@ -63,7 +62,6 @@ public:
 	//	return &sig;
 	//}
 };
-std::mutex singleton::mut;
 #endif
 /**********饿汉模式**********/
 #ifdef Hungryman1
