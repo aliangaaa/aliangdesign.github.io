@@ -60,3 +60,10 @@ private:
 		return new football();
 	}
 };
+
+void main(){
+	AbstractFactory* a = new basketFactory();
+	Abstractball* b = a->getinstance();
+	b->display();
+	getchar();
+}
