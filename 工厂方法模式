@@ -2,6 +2,7 @@
 把工厂抽象出来，一个工厂负责一个产品
 父类虚函数权限是public，子类重写可以是private
 相较于简单工厂模式，工厂方法模式符合“开闭原则”
+助记：虚拟工厂生产虚拟产品，虚拟产品申明虚拟行为
 */
 #include <iostream>
 using namespace std;
