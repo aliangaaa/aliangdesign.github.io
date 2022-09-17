@@ -1,2 +1,2 @@
-# aliangdesign.github.io
+# aliangdesign
 design mode for c++
